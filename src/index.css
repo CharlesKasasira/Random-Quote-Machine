@@ -1,13 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#quote-box {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 6px;
+  box-shadow: 8px 8px 8px #6767eb16;
+  width: 500px;
+  position: relative;
+}
+
+#quote-icon {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  color: #5757d7;
+}
+
+#new-quote {
+  padding: 8px 12px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+#new-quote:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+
+#text {
+  font-size: 2rem;
+}
+
+#author {
+  text-align: right;
+  color: #5757d7ab;
+  font-weight: 300;
+}
+
+.clickable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: black;
 }
